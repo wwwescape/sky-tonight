@@ -1,7 +1,6 @@
 {
   "domain": "sky_tonight",
   "name": "Sky Tonight",
-  "categories": ["weather_alerts.forecasts"],
   "codeowners": ["@wwwescape"],
   "config_flow": true,
   "documentation": "https://github.com/wwwescape/sky-tonight",
