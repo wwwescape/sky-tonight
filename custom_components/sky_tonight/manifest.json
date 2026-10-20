@@ -8,5 +8,5 @@
   "iot_class": "calculated",
   "issue_tracker": "https://github.com/wwwescape/sky-tonight/issues",
   "requirements": ["astronomy-engine==2.1.19"],
-  "version": "0.1.0"
+  "version": "1.0.0"
 }
