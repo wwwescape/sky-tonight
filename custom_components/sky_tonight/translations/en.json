@@ -1,0 +1,106 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Sky Tonight",
+        "description": "Choose where you observe from. You can add more locations later.",
+        "data": {
+          "name": "Name",
+          "location": "Location",
+          "elevation": "Elevation",
+          "min_altitude": "Minimum altitude"
+        },
+        "data_description": {
+          "name": "Used as the device name and entity ID prefix.",
+          "elevation": "Height above sea level.",
+          "min_altitude": "How high above the horizon something must be before it counts as visible. Raise it if trees or buildings block your low sky."
+        }
+      },
+      "reconfigure": {
+        "title": "Change location",
+        "data": {
+          "location": "Location",
+          "elevation": "Elevation"
+        },
+        "data_description": {
+          "elevation": "Height above sea level."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This location is already set up.",
+      "reconfigure_successful": "The location was updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "min_altitude": "Minimum altitude"
+        },
+        "data_description": {
+          "min_altitude": "How high above the horizon something must be before it counts as visible. Raise it if trees or buildings block your low sky."
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "dark_sky": { "name": "Dark sky" },
+      "meteor_shower_active": { "name": "Meteor shower active" },
+      "visible": { "name": "{body} visible" }
+    },
+    "sensor": {
+      "darkness": {
+        "name": "Darkness",
+        "state": {
+          "day": "Day",
+          "civil_twilight": "Civil twilight",
+          "nautical_twilight": "Nautical twilight",
+          "astronomical_twilight": "Astronomical twilight",
+          "night": "Night"
+        }
+      },
+      "astronomical_dusk": { "name": "Astronomical dusk" },
+      "astronomical_dawn": { "name": "Astronomical dawn" },
+      "dark_hours": { "name": "Dark hours tonight" },
+      "dark_sky_hours": { "name": "Moonless dark hours tonight" },
+      "dark_sky_start": { "name": "Next dark sky" },
+      "visible_planets": { "name": "Visible planets" },
+      "visible_planets_tonight": { "name": "Visible planets tonight" },
+      "moon_phase": {
+        "name": "Moon phase",
+        "state": {
+          "new_moon": "New moon",
+          "waxing_crescent": "Waxing crescent",
+          "first_quarter": "First quarter",
+          "waxing_gibbous": "Waxing gibbous",
+          "full_moon": "Full moon",
+          "waning_gibbous": "Waning gibbous",
+          "last_quarter": "Last quarter",
+          "waning_crescent": "Waning crescent"
+        }
+      },
+      "moon_illumination": { "name": "Moon illumination" },
+      "moon_altitude": { "name": "Moon altitude" },
+      "moon_azimuth": { "name": "Moon azimuth" },
+      "moon_distance": { "name": "Moon distance" },
+      "moonrise": { "name": "Moonrise" },
+      "moonset": { "name": "Moonset" },
+      "next_new_moon": { "name": "Next new moon" },
+      "next_first_quarter": { "name": "Next first quarter" },
+      "next_full_moon": { "name": "Next full moon" },
+      "next_last_quarter": { "name": "Next last quarter" },
+      "next_lunar_eclipse": { "name": "Next lunar eclipse" },
+      "next_solar_eclipse": { "name": "Next solar eclipse" },
+      "next_meteor_shower": { "name": "Next meteor shower" },
+      "next_celestial_event": { "name": "Next celestial event" },
+      "altitude": { "name": "{body} altitude" },
+      "azimuth": { "name": "{body} azimuth" },
+      "rise": { "name": "{body} rise" },
+      "set": { "name": "{body} set" },
+      "magnitude": { "name": "{body} magnitude" },
+      "constellation": { "name": "{body} constellation" }
+    }
+  }
+}

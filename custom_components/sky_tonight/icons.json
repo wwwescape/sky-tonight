@@ -1,0 +1,67 @@
+{
+  "entity": {
+    "binary_sensor": {
+      "dark_sky": {
+        "default": "mdi:weather-night",
+        "state": { "on": "mdi:star-shooting-outline" }
+      },
+      "meteor_shower_active": { "default": "mdi:meteor" },
+      "visible": {
+        "default": "mdi:telescope",
+        "state": { "off": "mdi:eye-off-outline", "on": "mdi:eye-outline" }
+      }
+    },
+    "sensor": {
+      "darkness": {
+        "default": "mdi:weather-night",
+        "state": {
+          "day": "mdi:weather-sunny",
+          "civil_twilight": "mdi:weather-sunset",
+          "nautical_twilight": "mdi:weather-sunset-down",
+          "astronomical_twilight": "mdi:weather-night-partly-cloudy",
+          "night": "mdi:weather-night"
+        }
+      },
+      "astronomical_dusk": { "default": "mdi:weather-sunset-down" },
+      "astronomical_dawn": { "default": "mdi:weather-sunset-up" },
+      "dark_hours": { "default": "mdi:timer-sand" },
+      "dark_sky_hours": { "default": "mdi:star-four-points-outline" },
+      "dark_sky_start": { "default": "mdi:star-shooting-outline" },
+      "visible_planets": { "default": "mdi:orbit" },
+      "visible_planets_tonight": { "default": "mdi:orbit-variant" },
+      "moon_phase": {
+        "default": "mdi:moon-waxing-crescent",
+        "state": {
+          "new_moon": "mdi:moon-new",
+          "waxing_crescent": "mdi:moon-waxing-crescent",
+          "first_quarter": "mdi:moon-first-quarter",
+          "waxing_gibbous": "mdi:moon-waxing-gibbous",
+          "full_moon": "mdi:moon-full",
+          "waning_gibbous": "mdi:moon-waning-gibbous",
+          "last_quarter": "mdi:moon-last-quarter",
+          "waning_crescent": "mdi:moon-waning-crescent"
+        }
+      },
+      "moon_illumination": { "default": "mdi:brightness-6" },
+      "moon_altitude": { "default": "mdi:angle-acute" },
+      "moon_azimuth": { "default": "mdi:compass-outline" },
+      "moon_distance": { "default": "mdi:map-marker-distance" },
+      "moonrise": { "default": "mdi:arrow-up-bold-circle-outline" },
+      "moonset": { "default": "mdi:arrow-down-bold-circle-outline" },
+      "next_new_moon": { "default": "mdi:moon-new" },
+      "next_first_quarter": { "default": "mdi:moon-first-quarter" },
+      "next_full_moon": { "default": "mdi:moon-full" },
+      "next_last_quarter": { "default": "mdi:moon-last-quarter" },
+      "next_lunar_eclipse": { "default": "mdi:circle-half-full" },
+      "next_solar_eclipse": { "default": "mdi:sun-angle" },
+      "next_meteor_shower": { "default": "mdi:meteor" },
+      "next_celestial_event": { "default": "mdi:calendar-star" },
+      "altitude": { "default": "mdi:angle-acute" },
+      "azimuth": { "default": "mdi:compass-outline" },
+      "rise": { "default": "mdi:arrow-up-bold-circle-outline" },
+      "set": { "default": "mdi:arrow-down-bold-circle-outline" },
+      "magnitude": { "default": "mdi:brightness-percent" },
+      "constellation": { "default": "mdi:star-four-points" }
+    }
+  }
+}
